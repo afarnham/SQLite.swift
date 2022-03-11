@@ -18,16 +18,9 @@ let package = Package(
     targets: [
         .target(
             name: "SQLite",
-            dependencies: ["SQLiteObjc"],
-            exclude: [
-                "Info.plist"
-            ]
-        ),
-        .target(
-            name: "SQLiteObjc",
             dependencies: [],
             exclude: [
-                "fts3_tokenizer.h"
+                "Info.plist"
             ]
         ),
         .testTarget(
